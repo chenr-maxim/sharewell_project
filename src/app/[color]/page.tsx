@@ -63,10 +63,10 @@ const ColorPage = () => {
 
   return (
     <div className={`${backgroundColor} min-h-[200vh] w-screen`}>
-      <h1 className="text-center capitalize" style={{ color: "white" }}>
+      <h1 className="text-white text-center text-xl capitalize">
         {color} Page
       </h1>
-      <div className="flex flex-col items-center space-y-4">
+      <div className="text-black flex flex-col items-center gap-4">
         {renderButtons()}
       </div>
       {modals.map((modal) => (

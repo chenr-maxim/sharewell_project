@@ -7,18 +7,19 @@ const useRenderButtons = (
   handleOpenModal: (modal: string) => void
 ) => {
   return useCallback(() => {
+    const buttonClass = "bg-white text-black px-4 py-3 rounded";
     switch (color) {
       case "green":
         return (
           <>
             <button
               onClick={() => handleOpenModal("modal1")}
-              className="mt-4 bg-white text-black px-4 py-3 rounded">
+              className={buttonClass}>
               Open Modal 1
             </button>
             <button
               onClick={() => handleOpenModal("modal2")}
-              className="mt-4 bg-white text-black px-4 py-3 rounded">
+              className={buttonClass}>
               Open Modal 2
             </button>
           </>
@@ -28,12 +29,12 @@ const useRenderButtons = (
           <>
             <button
               onClick={() => handleOpenModal("modal2")}
-              className="mt-4 bg-white text-black px-4 py-3 rounded">
+              className={buttonClass}>
               Open Modal 2
             </button>
             <button
               onClick={() => handleOpenModal("modal3")}
-              className="mt-4 bg-white text-black px-4 py-3 rounded">
+              className={buttonClass}>
               Open Modal 3
             </button>
           </>
@@ -43,12 +44,12 @@ const useRenderButtons = (
           <>
             <button
               onClick={() => handleOpenModal("modal1")}
-              className="mt-4 bg-white text-black px-4 py-3 rounded">
+              className={buttonClass}>
               Open Modal 1
             </button>
             <button
               onClick={() => handleOpenModal("modal3")}
-              className="mt-4 bg-white text-black px-4 py-3 rounded">
+              className={buttonClass}>
               Open Modal 3
             </button>
           </>
